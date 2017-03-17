@@ -2,9 +2,11 @@
 
 :aerial_tramway: A modern, minimalist, and lightweight URL shortener.
 
-[![GitHub license](https://img.shields.io/badge/license-GPLv2%2B-blue.svg)]() 
+[![GitHub license](https://img.shields.io/badge/license-GPLv2%2B-blue.svg)]()
+[![GitHub release](https://img.shields.io/github/release/cydrobolt/polr.svg)](https://github.com/cydrobolt/polr/releases)
 [![Builds status](https://travis-ci.org/cydrobolt/polr.svg)](https://travis-ci.org/cydrobolt/polr) 
 [![Docs](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](http://polr.readthedocs.org/en/latest/)
+
 
 Polr is an intrepid, self-hostable open-source link shortening web application with a robust API. It allows you to host your own URL shortener, to brand your URLs, and to gain control over your data. Polr is especially easy to use, and provides a modern, themable feel.
 
@@ -35,12 +37,12 @@ There are breaking changes between 2.x and 1.x; it is not yet possible to automa
 *Upgrading from 2.x:*
  - Back up your database and files
  - Update by using `git pull` or downloading a release
- - Run `composer install -no-dev -o` to ensure dependencies are up to date
+ - Run `composer install --no-dev -o` to ensure dependencies are up to date
  - Migrate with `php artisan migrate` to ensure database structure is up to date
 
 #### Browser Extensions
 
-* Safari - [Polr.safariextension](https://github.com/cleverdevil/Polr.safariextension).
+* Safari - [Polr.safariextension](https://github.com/cleverdevil/Polr.safariextension)
 
 ####Versioning
 

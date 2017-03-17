@@ -57,7 +57,7 @@ class LinkHelper {
          * check whether the link is in the DB.
          * @return boolean
          */
-        $link = Link::where('long_url', $long_url)
+        $link = Link::longUrl($long_url)
             ->where('is_custom', 0)
             ->where('secret_key', '')
             ->first();
@@ -73,14 +73,6 @@ class LinkHelper {
     static public function validateEnding($link_ending) {
         $is_valid_ending = preg_match('/^[a-zA-Z0-9-_]+$/', $link_ending);
         return $is_valid_ending;
-    }
-
-    static public function processPostClick($link) {
-        /**
-         * Given a Link model instance, process post click operations.
-         * @param Link model instance $link
-         * @return boolean
-         */
     }
 
     static public function findPseudoRandomEnding() {
